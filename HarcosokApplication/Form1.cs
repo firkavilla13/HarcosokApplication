@@ -67,7 +67,7 @@ namespace HarcosokApplication
             //Ki listázni a regisztrált harcosok (felhasználók) neveit :)
             regUserekLabel.Text = string.Format(kiirando, darabszam);
             var cFelhasznalok = conn.CreateCommand();
-            cFelhasznalok.CommandText = "SELECT nev FROM harcosok ORDER BY nev"; //SQL Kód Ami Kijelöli a harcosokat
+            cFelhasznalok.CommandText = "SELECT nev,letrehozas FROM harcosok ORDER BY nev"; //SQL Kód Ami Kijelöli a harcosokat
 
             using (var reader = cFelhasznalok.ExecuteReader())
             {
@@ -75,8 +75,12 @@ namespace HarcosokApplication
                 while (reader.Read())
                 {
                     var nev = reader.GetString("nev");
+                    var datum = reader.GetDateTime("letrehozas");
                     hasznaloComboBox.Items.Add(string.Format("{0}",nev));
-                   
+                    harcosokListBox.Items.Add(
+                       string.Format("{0} - {1:yyyy. MM. dd.}", nev, datum)
+                       );
+
 
                     /* Le lehetne kérni a dátumot is, és az alábbi szerint szépre formázni, de erre nincs szükség az esetemben.
                      * var datum = reader.GetDateTime("letrehozas");
@@ -86,7 +90,6 @@ namespace HarcosokApplication
                          */
                 }
             }
-            
 
         }
 
@@ -141,5 +144,7 @@ namespace HarcosokApplication
 
 
         }
+
+        
     }
 }

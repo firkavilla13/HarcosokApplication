@@ -33,6 +33,7 @@
             this.harcosNeveTextBox = new System.Windows.Forms.TextBox();
             this.letrehozasButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.kepessegHozzaadasButton = new System.Windows.Forms.Button();
             this.leirasLabel = new System.Windows.Forms.Label();
             this.kepessegNeveTextBox = new System.Windows.Forms.TextBox();
             this.label_KepessegNev = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.kepessegekLabel = new System.Windows.Forms.Label();
             this.harcosokLabel = new System.Windows.Forms.Label();
             this.regUserekLabel = new System.Windows.Forms.Label();
-            this.kepessegHozzaadasButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -106,6 +106,16 @@
             this.groupBox1.Size = new System.Drawing.Size(894, 111);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            // 
+            // kepessegHozzaadasButton
+            // 
+            this.kepessegHozzaadasButton.Location = new System.Drawing.Point(315, 76);
+            this.kepessegHozzaadasButton.Name = "kepessegHozzaadasButton";
+            this.kepessegHozzaadasButton.Size = new System.Drawing.Size(75, 23);
+            this.kepessegHozzaadasButton.TabIndex = 7;
+            this.kepessegHozzaadasButton.Text = "Hozzáadás";
+            this.kepessegHozzaadasButton.UseVisualStyleBackColor = true;
+            this.kepessegHozzaadasButton.Click += new System.EventHandler(this.kepessegHozzaadasButton_Click);
             // 
             // leirasLabel
             // 
@@ -226,7 +236,6 @@
             this.harcosokListBox.Name = "harcosokListBox";
             this.harcosokListBox.Size = new System.Drawing.Size(183, 277);
             this.harcosokListBox.TabIndex = 3;
-        
             // 
             // kepessegekleirasasLabel
             // 
@@ -263,16 +272,6 @@
             this.regUserekLabel.Size = new System.Drawing.Size(35, 13);
             this.regUserekLabel.TabIndex = 6;
             this.regUserekLabel.Text = "label1";
-            // 
-            // kepessegHozzaadasButton
-            // 
-            this.kepessegHozzaadasButton.Location = new System.Drawing.Point(315, 76);
-            this.kepessegHozzaadasButton.Name = "kepessegHozzaadasButton";
-            this.kepessegHozzaadasButton.Size = new System.Drawing.Size(75, 23);
-            this.kepessegHozzaadasButton.TabIndex = 7;
-            this.kepessegHozzaadasButton.Text = "Hozzáadás";
-            this.kepessegHozzaadasButton.UseVisualStyleBackColor = true;
-            this.kepessegHozzaadasButton.Click += new System.EventHandler(this.kepessegHozzaadasButton_Click);
             // 
             // Form1
             // 
