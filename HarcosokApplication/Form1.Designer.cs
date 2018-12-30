@@ -203,6 +203,7 @@
             this.modositasButton.TabIndex = 7;
             this.modositasButton.Text = "Módosít";
             this.modositasButton.UseVisualStyleBackColor = true;
+            this.modositasButton.Click += new System.EventHandler(this.modositasButton_Click);
             // 
             // torlesButton
             // 
@@ -212,6 +213,7 @@
             this.torlesButton.TabIndex = 6;
             this.torlesButton.Text = "Törlés";
             this.torlesButton.UseVisualStyleBackColor = true;
+            this.torlesButton.Click += new System.EventHandler(this.torlesButton_Click);
             // 
             // kepessegekLeirasaTextBox
             // 
@@ -228,6 +230,7 @@
             this.kepessegekListBox.Name = "kepessegekListBox";
             this.kepessegekListBox.Size = new System.Drawing.Size(178, 277);
             this.kepessegekListBox.TabIndex = 4;
+            this.kepessegekListBox.SelectedIndexChanged += new System.EventHandler(this.kepessegekListBox_SelectedIndexChanged);
             // 
             // harcosokListBox
             // 
@@ -236,6 +239,7 @@
             this.harcosokListBox.Name = "harcosokListBox";
             this.harcosokListBox.Size = new System.Drawing.Size(183, 277);
             this.harcosokListBox.TabIndex = 3;
+            this.harcosokListBox.SelectedIndexChanged += new System.EventHandler(this.harcosokListBox_SelectedIndexChanged);
             // 
             // kepessegekleirasasLabel
             // 
